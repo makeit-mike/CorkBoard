@@ -26,7 +26,7 @@
         <!-- End of board info bar -->
         <!-- Lists container -->
         <section class="lists-container" style="max-width:100%;">
-
+            <!-- ForEach list, create list  -->
             <div class="list">
 
                 <h3 class="list-title">Tasks to Do</h3>
@@ -127,33 +127,7 @@
                     <li>Static Site Generators (Jekyll, Hugo, Gatsby etc.)</li>
                 </ul>
 
-                <button class="add-card-btn btn">Add a card</button>
-
-            </div>
-
-            <div class="list">
-
-                <h3 class="list-title">Useful Websites for Learning</h3>
-
-                <ul class="list-items">
-                    <li>Code Academy</li>
-                    <li>CodePen</li>
-                    <li>Codrops</li>
-                    <li>CSS-Tricks</li>
-                    <li>Free Code Camp</li>
-                    <li>Khan Academy</li>
-                    <li>Lynda</li>
-                    <li>Medium</li>
-                    <li>Mozilla Developer Network</li>
-                    <li>Stack Overflow</li>
-                    <li>Team Treehouse</li>
-                    <li>Tuts Plus</li>
-                    <li>Udemy</li>
-                    <li>WPSessions</li>
-                    <li>YouTube</li>
-                </ul>
-
-                <button class="add-card-btn btn">Add a card</button>
+                <button class="add-card-btn btn" @onclick="addItem">Add a card</button>
 
             </div>
 
@@ -268,3 +242,14 @@
         </section>
         <!-- End of lists container -->
     </div>
+
+@code {
+
+    void addItem()
+    {
+
+    }
+
+
+
+}
